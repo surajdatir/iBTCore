@@ -1,1 +1,1 @@
-# ibtcore-web
+# iBTCore
