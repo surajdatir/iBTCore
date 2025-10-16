@@ -41,6 +41,37 @@
 </script>
 
     <style>
+    .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* text center */
+  position: relative;
+  height: 60px;
+  background-color: #fff; /* ya jo color chahiye */
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hamburger {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  position: absolute;
+  left: 70px; /* hamburger ke thoda right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .contact-form .btn {
     background: #0066ff;
 }
@@ -1202,6 +1233,20 @@ body {
     </style>
 </head>
 <body>
+    
+    <!-- ===== Top Bar Header ===== -->
+  <header class="top-bar">
+    <div class="hamburger">
+      <img src="hamburger-icon.png" alt="Menu" height="30">
+    </div>
+    <div class="logo">
+      <img src="IMG_8596.png" alt="iBTCore Logo" height="40">
+    </div>
+    <div class="site-name">
+      iBTCore
+    </div>
+  </header>
+  <!-- ===== End Header ===== -->
     <!-- Animated Background -->
   
   <div class="bg-animation">
