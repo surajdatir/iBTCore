@@ -41,15 +41,17 @@
 </script>
 
     <style>
-    .top-bar {
+   .top-bar {
   display: flex;
   align-items: center;
-  justify-content: center; /* text center */
+  justify-content: center;
   position: relative;
   height: 60px;
-  background-color: #fff; /* ya jo color chahiye */
+  background-color: #111; /* dark background */
+  color: #fff; /* text white */
   padding: 0 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  z-index: 1000;
 }
 
 .hamburger {
@@ -59,9 +61,13 @@
   transform: translateY(-50%);
 }
 
+.hamburger img {
+  filter: invert(1); /* agar icon black hai to white ho jaaye */
+}
+
 .logo {
   position: absolute;
-  left: 70px; /* hamburger ke thoda right */
+  left: 70px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -70,6 +76,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: #fff;
 }
 
 .contact-form .btn {
